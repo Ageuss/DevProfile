@@ -1,0 +1,13 @@
+<app-portfolio-menu></app-portfolio-menu>
+<div *ngIf="router.url === '/'">
+	<div class="perfil">
+		<img [src]="foto" alt="Foto de {{ nome }}">
+		<h2>{{ nome }}</h2>
+		<p class="profissao">{{ profissao }}</p>
+		<p>Email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+		<p>Telefone: <a [href]="whatsappLink" target="_blank">{{ telefone }}</a></p>
+		<p>LinkedIn: <a [href]="linkedin" target="_blank">Ver perfil</a></p>
+		<p>GitHub: <a [href]="github" target="_blank">Ver repositórios</a></p>
+	</div>
+</div>
+<router-outlet></router-outlet>

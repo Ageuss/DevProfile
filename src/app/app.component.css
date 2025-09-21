@@ -1,0 +1,39 @@
+/* Perfil centralizado na tela inicial */
+.perfil {
+	text-align: center;
+	margin: 20px auto;
+	padding: 0 15px;
+	max-width: 600px;
+}
+
+.perfil img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.profissao {
+	font-weight: bold;
+	margin: 5px 0 15px;
+}
+
+.perfil a {
+	color: #1976d2;
+	text-decoration: none;
+}
+.perfil a:hover {
+	text-decoration: underline;
+	color: #1565c0;
+	background: #e3f2fd;
+	border-radius: 3px;
+	transition: background 0.2s, color 0.2s;
+}
+
+@media (max-width: 768px) {
+	.perfil img {
+		width: 100px;
+		height: 100px;
+	}
+}

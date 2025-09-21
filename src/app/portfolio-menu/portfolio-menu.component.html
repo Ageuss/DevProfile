@@ -1,0 +1,22 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="logo">{{ nome }}</span>
+  <span class="spacer"></span>
+
+  <!-- Menu para desktop -->
+  <nav class="menu-desktop">
+    <button mat-button routerLink="/sobre-mim">Sobre Mim</button>
+    <button mat-button routerLink="/experiencias">Experiências</button>
+    <button mat-button routerLink="/competencias">Competências</button>
+  </nav>
+
+  <!-- Menu hamburguer para mobile -->
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-mobile">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/sobre-mim">Sobre Mim</button>
+    <button mat-menu-item routerLink="/experiencias">Experiências</button>
+    <button mat-menu-item routerLink="/competencias">Competências</button>
+  </mat-menu>
+</mat-toolbar>
+
